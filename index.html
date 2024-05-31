@@ -1,9 +1,125 @@
-<html>
-  <head>
-    <title>webisite</title>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sathish Portfolio</title>
+
+
     <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <h1>welcome to my webiste</h1>
-  </body>
+</head>
+
+<body>
+    <header>
+        <div class="menu">
+            <div class="menu-items"><a href="#">home</a></div>
+            <div class="menu-items"><a href="#skills">projects</a></div>
+            <div class="menu-items"><a href="#">contact</a></div>
+        </div>
+    </header>
+    <!-- hero section content -->
+    <section class="banner">
+
+        <div class="picture">
+            <img class="me" src="me.png" alt="person">
+        </div>
+        <div class="intro">
+            <h2 id="name">I am <span style="color: red; font-size: 1.5em;">sathish K</span>
+                <br><span id="feild" data-text="web Designer">web Designer</span>
+            </h2>
+            <hr>
+            <p>HTML | CSS | BOOTSTRAP | JAVA SCRIPT | JQUERY | PYTHON</p>
+           <a href="https://wa.me//+918148913281?text=Hi sathish..!!!"> <button>Contact Me 📞</button></a>
+        </div>
+    </section>
+
+    <!-- ------------------------------------------------------------------- -->
+    <div class="title">
+        <h1 id="skills">SKILLS</h1>
+    </div>
+
+    <main class="projects">
+        <div class="cards">
+            <div class="citems">
+                <img src="icons8-hr-64.png" alt="anime">
+                <h4>Hr salary prediction using ml</h4>
+                <p>Using the label data predicating the HR salay ML algorithms.</p>
+
+            </div>
+            <div class="citems">
+                <img src="icons8-kidney-64.png" alt="kidney img">
+                <h4>chronic kidney disease prediction</h4>
+                <p>using the patient dataset. Builded the model to predict the disease.
+                    project Done for naan Mudalvan.
+                </p>
+
+            </div>
+            <div class="citems">
+                <img src="icons8-messages-100.png" alt="message ico">
+                <h4>automactic wishes sending web app</h4>
+                <p>using python flask frame work and smtp protocols are used to build the web app.</p>
+
+            </div>
+            <div class="citems">
+                <img src="icons8-whatsapp-96.png" alt="whatsapp img">
+                <h4>uml for whatsapp</h4>
+                <p>The entire workflow of the whatsapp is represent using diffrent UML diagrams</p>
+
+            </div>
+            <div class="citems">
+                <img src="icons8-xray-64.png" alt="xray img">
+                <h4>disease prediction using xray, ct-scans</h4>
+                <p>CNN alogrithm is used to create the predication model. and flask is used to intregrate the
+                    model with UI.
+                </p>
+
+            </div>
+            <div class="citems">
+                <img src="icons8-portfolio-80.png" alt="img">
+                <h4>my portfolio</h4>
+                <p>HTML , CSS and java script is only used to create the portfolio.</p>
+
+            </div>
+        </div>
+
+    </main>
+
+    <div class="title">
+        <h1>contact</h1>
+    </div>
+
+    <!-- contact form -->
+
+    <section class="contact">
+
+        <form class="form-data">
+            <h3>CONTACT FORM</h3>
+
+            <input type="text" id="names" placeholder="Enter a name">
+            <input type="text" id="email" placeholder="Enter a email">
+            <input type="text" id="email" placeholder="Enter a thougths...">
+            <button type="submit">submit</button>
+
+
+        </form>
+
+    </section>
+    <hr>
+    <footer>
+        <div class="foot-ele">
+            <h3>&copy;2024 sathish Portfolio 🧡</h3>
+            <div class="links">
+                <a href="www.github.com">
+                    <img class="link-items" src="github-svgrepo-com.svg" alt="github link">
+                </a>
+                <a href=""><img class="link-items" src="insta-svgrepo-com.svg" alt="insta"></a>
+                <a href=""><img class="link-items" src="linkedin-svgrepo-com.svg" alt="linkedin"></a>
+
+            </div>
+        </div>
+    </footer>
+
+</body>
+
 </html>

@@ -1,7 +1,259 @@
-h1{
-  text-align:center;
+body {
+    margin: 10 auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-body{
-  margin:none;
-  
+html{
+    scroll-behavior: smooth;
+}
+header {
+    color: rgba(20, 19, 19, 0.897);
+    background-color: rgba(233, 226, 226, 0.336);
+    position: sticky;
+    top: 0;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    box-shadow: 2px 2px 8px rgb(146, 143, 143);
+}
+
+.menu-items a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    color: rgba(0, 0, 0, 0.425);
+    font-weight: 500;
+}
+
+.menu-items {
+    padding: 10px 15px;
+}
+
+.banner {
+    height: 500px;
+    width: 100%;
+    margin-top: 50px;
+    background-image: url(3.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    text-align: center;
+    overflow: hidden;
+}
+
+
+.intro {
+    color: rgb(0, 0, 0);
+    width: 50%;
+    height: 100%;
+
+}
+
+.intro button {
+    background-color: rgb(117, 231, 117);
+    color: black;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 5px 10px;
+}
+
+.intro button:hover {
+    background-color: rgb(14, 241, 14);
+}
+
+.picture {
+
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.picture .me {
+    max-width: 500px;
+}
+
+#name {
+    font-size: 3.5em;
+    text-transform: capitalize;
+}
+
+@media (max-width:1200px) {
+    #name {
+        font-size: 2em;
+    }
+
+}
+
+
+#feild {
+    font-size: 1em;
+    position: relative;
+    color: transparent;
+    animation: sample 3s linear infinite;
+
+}
+
+.banner p {
+    color: black;
+    font-size: larger;
+    font-weight: bold;
+}
+
+@keyframes sample {
+    0% {
+        color: hsl(251, 57%, 54%);
+
+    }
+
+    50% {
+        color: rgb(48, 216, 85);
+        z-index: 2;
+    }
+
+    100% {
+        color: rgba(78, 75, 75, 0.637);
+    }
+
+}
+
+.title {
+    text-align: center;
+    padding: 10px;
+    margin: 30px 0px;
+    background-color: hsla(0, 10%, 92%, 0.918);
+    box-shadow: 2px 2px 4px rgba(150, 148, 148, 0.473);
+}
+
+.projects {
+    height: auto;
+    width: 90%;
+    margin: auto;
+    background-color: transparent;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px;
+}
+
+.citems {
+    height: 300px;
+    width: 250px;
+    background-color: rgba(255, 255, 255, 0.47);
+    text-align: center;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.5);
+
+}
+
+.citems img {
+    max-height: 100px;
+    width: 150px;
+
+}
+
+.citems h4 {
+    text-transform: uppercase;
+    font-size: 20px;
+    color: red;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.citems p {
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+
+.citems:hover {
+    transform: scale(1.1);
+    transition-duration: 1s;
+}
+
+.contact {
+    height: 100dvh;
+    width: 90%;
+    background-color: white;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3em;
+}
+
+
+.form-data {
+    background-color: rgba(114, 110, 110, 0.304);
+    height: 60vh;
+    width: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 30px;
+    box-shadow: 5px 5px 10px black;
+}
+
+@media (max-width:900px) {
+    .form-data{
+        width: 80%;
+    }
+    
+}
+
+
+.form-data input {
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    width: 80%;
+    font-size: 1.5em;
+    padding-left: 20px;
+    margin-top: 20px;
+
+}
+
+.form-data input::placeholder {
+    font-size: 1em;
+    text-align: center;
+    opacity: 60%;
+}
+
+.form-data input:focus {
+    outline: none;
+}
+
+.form-data button {
+    margin-top: 20px;
+    color: black;
+    background-color: greenyellow;
+    border: none;
+    border-radius: 15px;
+    font-size: 1.1em;
+}
+
+.form-data button:hover {
+    background-color: green;
+}
+
+.foot-ele {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.link-items {
+    max-height: 40px;
+    width: auto;
+    padding: 5px 10px;
 }
