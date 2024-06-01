@@ -208,6 +208,7 @@ header {
     .form-data{
         width: 80%;
     }
+
     
 }
 
@@ -256,4 +257,18 @@ header {
     max-height: 40px;
     width: auto;
     padding: 5px 10px;
+}
+
+@media (max-width:800px) {
+    .link-items{
+        max-height: 30px;
+    }
+    .foot-ele{
+        font-size: 10px;
+    }
+
+    .form-data{
+        font-size: calc(100% -5px);
+    }
+    
 }
